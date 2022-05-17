@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- DOCTYPE tells client (browser) which sets of rules to follow when rendering this file -->
+<html lang="en">
+<head>
+    <!-- head contains all metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Allows server to gather info about the page using http headers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Controls viewable space dimensions and scaling -->
+    <title>HTML & CSS Lesson</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto&display=swap" rel="stylesheet">
+    <!-- See link above, with two font-family values specified. They both can be used in style.css -->
+</head>
+<body>
+    <!-- Everything displayed in viewport -->
+    <!-- nav>ul.menu>li.menu-options*3>a.nav-link  -->
+    <nav>
+        <ul class="menu">
+            <li class="menu-options"><a href="#html" class="nav-link">HTML</a></li>
+            <li class="menu-options"><a href="#css" class="nav-link">CSS</a></li>
+            <li class="menu-options"><a href="#form" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 
+        ? Emmet solution
+        div.main-wrapper>main#main-heading>h1#main-text...
+        ...{...}^section#html>h2{...}div.text-img-wrapper...
+        ...>p{...}^div.img-container>img.p-img-logos
+
+     -->
+
+    <div class="main-wrapper">
+        <main id="main-heading">
+            <h1 id="main-text">HTML & CSS Lesson</h1>
+        </main>
+        <section id="html">
+            <h2>HTML</h2>
+            <div class="text-img-wrapper">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla reiciendis ratione est aut, dolores neque perspiciatis fuga laudantium quis voluptatem saepe ad maiores officia voluptatum quas maxime animi praesentium dolore.</p>
+            </div>
+            <div class="img-container">
+                <!-- images go in divs for better flexbox behavior -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2560px-HTML5_logo_and_wordmark.svg.png" alt="html5-w3-logo" class="p-img-logos">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
